@@ -25,7 +25,7 @@ public class DropBox_Service {
         String output = new String();
         try {
 
-            URL url = new URL("https://www.dropbox.com/s/6fg0k2wxwrheyqk/ATMs?dl=1");
+            URL url = new URL(Constants.GET_DROPBOX_LINK);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
