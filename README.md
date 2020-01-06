@@ -82,4 +82,15 @@ and run the Class : SimpleWebAppApplication.Java
 Batch File To Execute the Project Is in Target Folder.
 Batch File Name : ATS_SearchEngine.bat
 
+Implementation / Solution :
+ - In this We have a DropBox Link which has all the data of ATM List of Dutch City.
+ - we fetch this data using a REST API , create a HTTP Connection and Fetch the data as a BufferReader and Add it to the String Variable.
+ - Then we convert this JsonString into a JSON Array and Itertate through all the JSON Objects and add to a String ArrayList.
+ - Then Using the WebSerice Call From the HTML - JS Layer we call this RESTAPI Which will return the ArrayList of JSONObjecst as String into JS Layer.
+ - Finally We parse this ArrayList of JSONObjects using JSON Parse in JS Layer and Add back to an Array which contains all JSOn Objects in a Single Array In JS Layer.
+ - Intially while loading the Search Engine we will show all the Records (JSON Objects)  , and on Search we filter over all the Records Using Angular JS.
+ -This will do the faster performance on Search Operation and a Single REST API Call while loading of page which is a best and faster way.
+ - Instead of Searching the Particular Record Directly in a REST API Call will slow down the perfromance.
+ - Custom Styling, BootStrap etc are added for Enhancing the look of WebSite.
+
 Thank you.
